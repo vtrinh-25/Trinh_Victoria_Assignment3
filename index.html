@@ -5,6 +5,10 @@
     <meta charset="UTF-8">
     <title>Victoria Trinh</title>
 
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap" rel="stylesheet">
+    
   <style>
     .container {
       width: 1200px;
@@ -31,21 +35,62 @@
         background-color: #998E78;
         color: white;
         padding: 20px;
-        text-align: center;
+        
+  margin: 20px auto 0;
         margin-top: 20px;
+        
+        display: flex;              /* puts items side-by-side */
+  justify-content: flex-end;    /* sligns to right side */
+        align-items: center;
+  gap: 60px; 
       }
+    
+    h1 {
+      margin: 0;
+      padding: 20px;
+        font-family: "Quicksand", sans-serif;
+  font-weight: 500;
+  font-size: 32px;
+  font-style: normal;
+      }
+    
+    h2 {
+      @font-face {
+  font-family: "Khiara Script";
+  src: url("KhiaraScript.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+    }
+    
+   .heropage1 {
+     width: 1200px;
+  height: 600px;
+  background-color: #01162B;
+     margin: 0 auto;
+     padding: 20px;
+}
     
   </style>
 </head>
 <body>
   
   <header>
-      <h1></h1>
+      <h1>home</h1>
+    <h1>about</h1>
+    <h1>work</h1>
     </header>
-
+  
+<section class="heropage1">
+  <div class="heropage1-content">
+    <h1>Welcome to My Website</h1>
+    <p>Design. Create. Inspire.</p>
+    <button>Learn More</button>
+  </div>
+</section>
+  
   <div class="container">
-    <h1>Centered 1200px Content Area</h1>
-    <p>Your content goes here.</p>
+   
   </div>
 
 </body>
