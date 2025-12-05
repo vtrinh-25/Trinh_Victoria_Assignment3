@@ -144,7 +144,7 @@
       .contactNames {
         position: relative;
         top: -462px;
-        right: 300px;
+        right: 296px;
         line-height: 1.8;
       }
 
@@ -234,8 +234,27 @@
         top: -280px;
         left: 690px;
       }
-      
-      
+
+      .workGrid {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        padding: 20px;
+        gap: 30px;
+        width: 1050px;
+        margin: 0 auto;
+      }
+
+      .workGrid div {
+        background-color: #f5c587;
+        font-size: 20px;
+        text-align: center;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        aspect-ratio: 1 / 1;
+        border-radius: 8px;
+      }
+
 
       .heropage2 {
         width: 1200px;
@@ -277,7 +296,7 @@
       <img src="petalsHome.png" alt="Blue Petal Design" width="300px" class="petalsHome">
       <section class="contactNames">
 
-      <h4>: Victoria Trinh<br>&nbsp: glimpse_of_v </h4>
+        <h4>: Victoria Trinh<br>&nbsp: glimpse_of_v </h4>
       </section>
       <section class="aboutBox">
         <h1>Welcome to my portfolio! I’m Victoria, a second-year GBDA student at the University of Waterloo looking to build my skills through hands-on experiences and real-world projects.</h1>
@@ -286,8 +305,12 @@
       <div class="line"></div>
       <button class="checkworkButton">check out some of my work!</button>
       <img src="singlePetal.png" alt="One Blue Petal Design" width="300px" class="singlePetal">
-      
-      
+      <div class="workGrid">
+        <div>square1</div>
+        <div>square2</div>
+        <div>square3</div>
+      </div>
+
     </div>
 
 
