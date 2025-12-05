@@ -10,6 +10,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap" rel="stylesheet">
 
     <style>
+      /* AI prompt: how to add DaFont font in css? */
       @font-face {
         font-family: "Khiara Script";
         src: url("KhiaraScript.ttf") format("truetype");
@@ -19,13 +20,11 @@
         width: 1200px;
         height: 1900px;
         margin: 0 auto;
-        /* centers the box */
         background: #22516D;
         padding: 20px;
       }
 
       body {
-        font-family: Georgia, serif;
         margin: 0;
         padding: 0px;
         background-color: #01162B;
@@ -46,12 +45,12 @@
         display: flex;
         /* puts items side-by-side */
         justify-content: flex-end;
-        /* sligns to right side */
+        /* aligns to right side */
         align-items: center;
         gap: 80px;
 
         z-index: 1200;
-        /* makes header stay above images */
+        /* AI prompt: how can sticky header stay above images? */
       }
 
       header img {
@@ -107,7 +106,7 @@
         color: #7AACCB;
         text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
       }
-      
+
       h5 {
         text-align: center;
         margin: 0;
@@ -275,33 +274,56 @@
         top: -610px;
         left: 100px;
       }
-      
+
       .blendHome {
         position: relative;
         top: -1030px;
         left: 450px;
       }
-      
+
       .clawHome {
         position: relative;
         top: -1285px;
         left: 845px;
       }
+      
+       .twoworkHome {
+        position: relative;
+        top: -3771px;
+        left: -220px;
+      }
+
+      .threeworkHome {
+        position: relative;
+        top: -3875px;
+        left: 140px;
+      }
+
+      .cinemaHome {
+        position: relative;
+        top: -3978px;
+        left: 515px;
+      }
+
       /* AI prompt: can I crop an image? */
       .squareCrop {
-        width: 300px; /* crop width */
+        width: 300px;
+        /* crop width */
         aspect-ratio: 1 / 1;
-        overflow: hidden; /* hides the rest of the image */
+        overflow: hidden;
+        /* hides the rest of the image */
       }
-      
-      .squareCrop img { 
+
+      .squareCrop img {
         width: 100%;
-  height: 100%;
-  object-fit: cover;      /* crops image to fit box */
-  object-position: center; /* shift image left */
+        height: 100%;
+        object-fit: cover;
+        /* crops image to fit box */
+        object-position: center;
+        /* shift image left */
       }
-      
-       .containerAbout {
+
+      .containerAbout {
         width: 1200px;
         height: 3000px;
         margin: 0 auto;
@@ -309,7 +331,7 @@
         background: #22516D;
         padding: 20px;
       }
-      
+
       .heropage2 {
         width: 1200px;
         height: 600px;
@@ -363,19 +385,19 @@
         <div></div>
         <div></div>
         <div></div>
-</div>
-<div class="hakuHome"><img src="Haku Design 2.png" alt="Graphic Design of Haku from Studio Ghibli Spirited Away" width="275px"></div>
-<div class="blendHome"><img src="homepageBlend.png" alt="Open Roof Top View of a 3D House made in Blender" width="270px"></div>
-<div class="clawHome"><img src="ClawLand_SilentFilm.png" alt="Outside View of a Claw Arcade" width="240px"></div>
+      </div>
+      <div class="hakuHome"><img src="Haku Design 2.png" alt="Graphic Design of Haku from Studio Ghibli Spirited Away" width="275px"></div>
+      <div class="blendHome"><img src="homepageBlend.png" alt="Open Roof Top View of a 3D House made in Blender" width="270px"></div>
+      <div class="clawHome"><img src="ClawLand_SilentFilm.png" alt="Outside View of a Claw Arcade" width="240px"></div>
     </div>
 
-  <section class="heropage2">
+    <section class="heropage2">
       <div class="heropage2-content">
         <img src="VTrinh.png" alt="Victoria Trinh" width="1350px">
       </div>
     </section>
 
-                                                                  <div class="container">
+    <div class="container">
       <img src="PortfolioPic.jpeg" alt="Portfolio Image of Victoria Trinh" width=400px" class="portfolioPic">
       <img src="contactsLogos.png" alt="Contacts Image" width="200px" class="contactsImg">
       <img src="petalsHome.png" alt="Blue Petal Design" width="300px" class="petalsHome">
@@ -394,10 +416,19 @@
         <div></div>
         <div></div>
         <div></div>
-</div>
-<div class="hakuHome"><img src="Haku Design 2.png" alt="Graphic Design of Haku from Studio Ghibli Spirited Away" width="275px"></div>
-<div class="blendHome"><img src="homepageBlend.png" alt="Open Roof Top View of a 3D House made in Blender" width="270px"></div>
-<div class="clawHome"><img src="ClawLand_SilentFilm.png" alt="Outside View of a Claw Arcade" width="240px"></div>
+      </div>
+      <div class="hakuHome"><img src="Haku Design 2.png" alt="Graphic Design of Haku from Studio Ghibli Spirited Away" width="275px"></div>
+      <div class="blendHome"><img src="homepageBlend.png" alt="Open Roof Top View of a 3D House made in Blender" width="270px"></div>
+      <div class="clawHome"><img src="ClawLand_SilentFilm.png" alt="Outside View of a Claw Arcade" width="240px"></div>
+      <div class="twoworkHome">
+        <h5>2D Work</h5>
+      </div>
+      <div class="threeworkHome">
+        <h5>3D Work</h5>
+      </div>
+      <div class="cinemaHome">
+        <h5>Cinematography</h5>
+      </div>
     </div>
   </body>
 </html>
