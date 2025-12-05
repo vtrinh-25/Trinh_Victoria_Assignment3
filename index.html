@@ -10,6 +10,11 @@
     <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap" rel="stylesheet">
 
     <style>
+      
+      @font-face {
+  font-family: "Khiara Script";
+  src: url("KhiaraScript.ttf") format("truetype");
+}
       .container {
         width: 1200px;
         height: 2000px;
@@ -23,7 +28,7 @@
       body {
         font-family: Georgia, serif;
         margin: 0;
-        padding: 20px;
+        padding: 0px;
         background-color: #f5f5f5;
         line-height: 1.6;
       }
@@ -86,14 +91,11 @@
         font-style: normal;
       }
 
-      h3 {
-        @font-face {
-          font-family: "Khiara Script";
-          src: url("KhiaraScript.ttf") format("truetype");
-          font-weight: normal;
-          font-style: normal;
-        }
-      }
+     h3 {
+  font-family: "Khiara Script", cursive;
+  font-size: 40px;
+  color: #7AACCB;
+}
 
       .heropage1 {
         width: 1200px;
@@ -120,6 +122,17 @@
         position: relative;
         top: -100px;
         left: 700px;
+      }
+      
+      .contactsImg {
+  position: relative;
+  top: -250px;
+  left: -350px;
+}
+      .petalsHome {
+         position: relative;
+  top: -250px;
+  left: -350px;
       }
 
       .aboutBox {
@@ -173,7 +186,8 @@
     </section>
 
     <div class="container">
-      <img src="PortfolioPic.jpeg" alt="Victoria Trinh" width=400px" class="portfolioPic">
+      <img src="PortfolioPic.jpeg" alt="Portfolio Image of Victoria Trinh" width=400px" class="portfolioPic"> <img <img src="contactsLogos.png" alt="Contacts Image" width="200px" class="contactsImg">
+      src="petalsHome.png" alt="Blue Petal Design" width="200px" class="petalsHome">
       <section class="aboutBox">
         <h1>Welcome to my portfolio! I’m Victoria, a second-year GBDA student at the University of Waterloo looking to build my skills through hands-on experiences and real-world projects.</h1>
       </section>
