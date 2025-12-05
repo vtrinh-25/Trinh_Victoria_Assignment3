@@ -562,7 +562,7 @@
         padding: 20px;
         column-gap: 20px;
         row-gap: 80px;
-        width: 1100px;
+        width: 1150px;
         height: auto;
         margin: 0 auto;
         position: relative;
@@ -570,8 +570,8 @@
       }
       
       .blendGrid div {
-        width: 200px;
-        height: 130px;
+        width: 250px;
+        height: 140px;
         background-color: #7EA2B8;
         border: 8px solid #003859;
         font-size: 20px;
@@ -583,15 +583,61 @@
         margin: 0 auto;
       }
       
+      /* AI prompt: can I crop a group of images? */
+      .blendGrid div img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;   /* crops image to fill box */
+  object-position: center; /* keeps crop centered */
+}
+      
+       .blendGridLabels {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        grid-template-rows: repeat(3, auto);
+        padding: 20px;
+        column-gap: 20px;
+        row-gap: 100px;
+        width: 1150px;
+        height: auto;
+        margin: 0 auto;
+        position: relative;
+        top: -200px;
+      }
+      
+      .blendGridLabels div {
+        width: 270px;
+        height: 140px;
+        font-size: 20px;
+        text-align: center;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 0 auto;
+      }
       .boxCinema {
         position: relative;
-        top: 4500px;
+        top: 4000px;
         width: 1200px;
         height: 110px;
         box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3);
         background-color: #9A8E78;
         margin: 0 auto;
         padding: 20px;
+      }
+      
+      .clawTextBox {
+        position: relative;
+        top: 0px;
+        width: 850px;
+        margin: 0 auto;
+      }
+      
+      .clawBox img{
+        position: relative;
+        top: 0px;
+        display: block;
+        margin: 0 auto;
       }
     </style>
   </head>
@@ -727,18 +773,51 @@
         <h1><strong>Medium(s):</strong> Blender (3D Software)</h1>
         <h1><strong>Description:</strong> A bungalow style home that reflects my vision of a dream space, designed around the idea of living with my sister.</h1></div>
         <div class="blendGrid">
-  <div>Item 1</div>
-  <div>Item 2</div>
-  <div>Item 3</div>
-  <div>Item 4</div>
-  <div>Item 5</div>
-  <div>Item 6</div>
-  <div>Item 7</div>
-  <div>Item 8</div>
-  <div>Item 9</div>
-  <div>Item 10</div>
-  <div>Item 11</div>
-  <div>Item 12</div>
+  <div><img src="blend_house-front 2 Small.png" alt="Blender House (front)" width="250px"></div>
+  <div><img src="blend_house-back 2 Small.png" alt="Blender House (back)" width="250px"></div>
+  <div><img src="blend_house-openroof 2 Small.png" alt="Blender House (top open roof)" width="250px"></div>
+  <div><img src="blend_house-top 2 Small.png
+" alt="Blender House (top closed roof)" width="250px"></div>
+  <div><img src="blend_house-kitchen 2 Small.png
+" alt="Blender House (kitchen)" width="250px"></div>
+  <div><img src="blend_house-livingroom 2 Small.png
+" alt="Blender House (living room)" width="250px"></div>
+  <div><img src="blend_house-roomA 2 Small.png
+" alt="Blender House (primary bedroom)" width="250px"></div>
+  <div><img src="blend_house-roomB 2 Small.png
+" alt="Blender House (secondary bedroom)" width="250px"></div>
+  <div><img src="blend_house-offfice 2 Small.png
+" alt="Blender House (office)" width="250px">1</div>
+  <div><img src="blend_house-washroomA 2 Small.png" alt="Blender House (primary washroom)" width="250px"></div>
+          <div><img src="blend_house-powderroom 2 Small.png
+" alt="Blender House (powder room)" width="250px"></div>
+  <div><img src="blend_house-laundry 2 Small.png
+" alt="Blender House (laundry room)" width="250px"></div>
+</div>
+        <div class="blendGridLabels">
+  <div><h1>Front</h1></div>
+  <div><h1>Back</h1></div>
+  <div><h1>Top (Open Roof)</h1></div>
+  <div><h1>Top (Closed Roof)</h1></div>
+  <div><h1>Kitchen</h1></div>
+  <div><h1>Living Room</h1></div>
+  <div><h1>Primary Bedroom</h1></div>
+  <div><h1>Secondary Bedroom</h1></div>
+  <div><h1>Office</h1></div>
+  <div><h1>Primary Washroom</h1></div>
+  <div><h1>Powder Room</h1></div>
+  <div><h1>Laundry Room</h1></div>
+</div>
+         <div class="clawTextBox">
+        <h5>
+          <strong>“Claw Land” - A Silent Film</strong>
+        </h5>
+        <h1><strong>Date Created:</strong> September 2025</h1>
+        <h1><strong>Medium(s):</strong> Sony A7Cii, Adobe Premiere Pro</h1>
+        <h1><strong>Description:</strong> A silent film about a claw machine arcade that evokes a sense of time, feeling, and location.</h1></div>
+        <div class="clawBox">
+  <img src="ClawLand_SilentFilm.png
+" alt="Outside View of a Claw Arcade" width="700px">
 </div>
       </div>
   </body>
