@@ -148,7 +148,7 @@
         height: auto;
         margin-top: 50px;
         position: relative;
-        right: 80px;
+        right: 150px;
         /* move right */
       }
 
@@ -181,6 +181,7 @@
         position: relative;
         top: -200px;
         left: -890px;
+        z-index: 1;
       }
 
       .aboutBox {
@@ -374,7 +375,7 @@
         height: auto;
         margin-top: 50px;
         position: relative;
-        right: 250px;
+        right: 280px;
         /* move right */
       }
 
@@ -437,7 +438,7 @@
       .designSub {
         position: relative;
         top: -1600px;
-        right: 200px;
+        right: 235px;
       }
 
       .line1 {
@@ -453,7 +454,7 @@
       .hobbiesSub {
         position: relative;
         top: -1560px;
-        right: 100px;
+        right: 140px;
       }
 
       .line2 {
@@ -699,7 +700,7 @@
 
     <section id="home" class="heropage1">
       <div class="heropage1-content">
-        <img src="VTrinh.png" alt="Victoria Trinh" width="1350px">
+        <img src="VTrinh.png" alt="Victoria Trinh" width="1500px">
       </div>
     </section>
 
@@ -731,9 +732,23 @@
         <div></div>
         <div></div>
       </div>
-      <div class="hakuHome"><img src="Haku Design 2.png" alt="Graphic Design of Haku from Studio Ghibli Spirited Away" width="275px"></div>
-      <div class="blendHome"><img src="homepageBlend.png" alt="Open Roof Top View of a 3D House made in Blender" width="270px"></div>
-      <div class="clawHome"><img src="ClawLand_SilentFilm.png" alt="Outside View of a Claw Arcade" width="240px"></div>
+     <div class="hakuHome">
+  <a href="#twoworkSection">
+    <img src="Haku Design 2.png" alt="Graphic Design of Haku" width="275px">
+  </a>
+</div>
+
+<div class="blendHome">
+  <a href="#threeworkSection">
+    <img src="homepageBlend.png" alt="Blender House" width="270px">
+  </a>
+</div>
+
+<div class="clawHome">
+  <a href="#cinemaSection">
+    <img src="ClawLand_SilentFilm.png" alt="Claw Arcade" width="240px">
+  </a>
+</div>
       <div class="twoworkHome">
         <h5>2D Work</h5>
       </div>
@@ -747,7 +762,7 @@
 
     <section id="about" class="heropage2">
       <div class="heropage2-content">
-        <img src="About.png" alt="About Me" width="1450px">
+        <img src="About.png" alt="About Me" width="1550px">
       </div>
     </section>
 
@@ -760,8 +775,8 @@
         <h1>Hi! I’m Victoria Trinh, a Chinese-Vietnamese Toronto-based designer and visual storyteller with a passion for clean, modern design combined with the expressive aesthetics of Asian visual culture. Currently studying Global Business and Digital Arts from the University of Waterloo, I blend creativity with strategy to craft visuals that not only look beautiful, but communicate with clarity and purpose.</h1>
       </section>
       <img src="petalsAbt1.png" alt="Three Blue Petals Design" width="300px" class="abtPetals1">
-      <img src="Design_Interests.png" alt="Design Interests subtitle" width="1500px" class="designSub">
-      <img src="Hobbies.png" alt="Hobbies subtitle" width="1500px" class="hobbiesSub">
+      <img src="Design_Interests.png" alt="Design Interests subtitle" width="1600px" class="designSub">
+      <img src="Hobbies.png" alt="Hobbies subtitle" width="1600px" class="hobbiesSub">
       <div class="aboutGrid">
         <div>
           <h1>My work spans graphic design, UI/UX, cinematography, and marketing, and I especially love working in the industries of music and technology. Whether I’m shaping a brand identity, designing intuitive interfaces, or framing a shot, I’m driven by detail, intention, and a playful curiosity that keeps my ideas unique.</h1>
@@ -779,20 +794,20 @@
 
     <section id="work" class="heropage3">
       <div class="heropage3-content">
-        <img src="Work.png" alt="My Work subtitle" width="1450px">
+        <img src="Work.png" alt="My Work subtitle" width="1520px">
       </div>
     </section>
 
     <div class="containerWork">
-      <div class="box2D">
-        <h3>2D Work</h3>
-      </div>
-      <div class="box3D">
-        <h3>3D Work</h3>
-      </div>
-      <div class="boxCinema">
-        <h3>Cinematography</h3>
-      </div>
+  <div class="box2D" id="twoworkSection">
+    <h3>2D Work</h3>
+  </div>
+  <div class="box3D" id="threeworkSection">
+    <h3>3D Work</h3>
+  </div>
+  <div class="boxCinema" id="cinemaSection">
+    <h3>Cinematography</h3>
+  </div>
       <div class="magTextBox">
         <h5>
           <strong>“So Now What?”</strong>
