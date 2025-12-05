@@ -64,9 +64,14 @@
       }
 
 
-      a {
+      a.white {
         text-decoration: none;
         color: white;
+      }
+      
+      a.blue {
+        text-decoration: none;
+        color: #7AACCB;
       }
 
       a:hover {
@@ -153,10 +158,16 @@
         left: 700px;
       }
 
-      .contactsImg {
+      .mailImg {
+        position: relative;
+        top: -245px;
+        left: -355px;
+      }
+      
+      .instaImg {
         position: relative;
         top: -250px;
-        left: -350px;
+        left: -560px;
       }
 
       .contactNames {
@@ -169,7 +180,7 @@
       .petalsHome {
         position: relative;
         top: -200px;
-        left: -680px;
+        left: -890px;
       }
 
       .aboutBox {
@@ -661,9 +672,9 @@
 
     <header>
       <img src="VT_Logo.png" alt="Victoria Trinh" width="95px">
-      <h2><a href="#home">home</a></h2>
-      <h2><a href="#about">about</a></h2>
-      <h2><a href="#work">work</a></h2>
+      <h2><a href="#home" class="white">home</a></h2>
+      <h2><a href="#about" class="white">about</a></h2>
+      <h2><a href="#work" class="white">work</a></h2>
     </header>
 
     <section id="home" class="heropage1">
@@ -675,11 +686,13 @@
 
       <div class="containerHome">
         <img src="PortfolioPic.jpeg" alt="Portfolio Image of Victoria Trinh" width="400px" class="portfolioPic">
-        <img src="contactsLogos.png" alt="Contacts Image" width="200px" class="contactsImg">
+        <a href="mailto:v2trinh@uwaterloo.ca"><img src="mail.png" alt="Mail Logo" width="200px" class="mailImg"></a>
+        <a href="https://www.instagram.com/glimpse_of_v?igsh=MTZ4dnNldzNtY2dkcg%3D%3D&utm_source=qr" target="_blank">
+          <img src="insta.png" alt="Instagram Logo" width="200px" class="instaImg"> </a>
         <img src="petalsHome.png" alt="Blue Petal Design" width="300px" class="petalsHome">
         <section class="contactNames">
 
-          <h4>: Victoria Trinh<br>&nbsp: glimpse_of_v </h4>
+          <h4>: <a href="mailto:v2trinh@uwaterloo.ca" class="blue">Victoria Trinh</a><br>&nbsp: <a href="https://www.instagram.com/glimpse_of_vigsh=MTZ4dnNldzNtY2dkcg%3D%3D&utm_source=qr"class="blue" target="_blank">glimpse_of_v</a></h4>
         </section>
         <section class="aboutBox">
           <h1>Welcome to my portfolio! I’m Victoria, a second-year GBDA student at the University of Waterloo looking to build my skills through hands-on experiences and real-world projects.</h1>
