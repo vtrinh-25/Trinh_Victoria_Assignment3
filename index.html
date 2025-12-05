@@ -50,12 +50,12 @@
         z-index: 1000;
         /* makes header stay above images */
       }
-      
+
       header img {
         position: relative;
         left: -515px;
       }
-      
+
       a {
         text-decoration: none;
         color: white;
@@ -66,6 +66,18 @@
       }
 
       h1 {
+        text-align: center;
+        margin: 0;
+        padding: 20px;
+        font-family: "Quicksand", sans-serif;
+        font-weight: 400;
+        font-size: 24px;
+        font-style: normal;
+        color: #7AACCB;
+        text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
+      }
+      
+      h2 {
         margin: 0;
         padding: 30px;
         font-family: "Quicksand", sans-serif;
@@ -74,7 +86,7 @@
         font-style: normal;
       }
 
-      h2 {
+      h3 {
         @font-face {
           font-family: "Khiara Script";
           src: url("KhiaraScript.ttf") format("truetype");
@@ -102,7 +114,46 @@
         position: relative;
         right: 65px;
         /* move right */
+      }
 
+      .portfolioPic {
+        position: absolute;
+        top: 700px;
+        right: 150px;
+      }
+
+      .aboutBox {
+        position: absolute;
+        top: 1100px;
+        right: 400px;
+        width: 350px;
+        height: 180px;
+        box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3);
+        /* help make drop shadow */
+        background: linear-gradient(to bottom,
+            rgba(103, 96, 82, 1) 0%,
+            rgba(85, 92, 89, 0.8) 40%,
+            rgba(66, 88, 96, 0.25) 100%);
+        background-color: #01162B;
+        opacity: 0.9;
+        margin: 0 auto;
+        padding: 20px;
+      }
+
+      .heropage2 {
+        width: 1200px;
+        height: 600px;
+        background-color: #01162B;
+        margin: 0 auto;
+        padding: 20px;
+      }
+
+      .heropage3 {
+        width: 1200px;
+        height: 600px;
+        background-color: #01162B;
+        margin: 0 auto;
+        padding: 20px;
       }
     </style>
   </head>
@@ -110,9 +161,9 @@
 
     <header>
       <img src="VT_Logo.png" alt="Victoria Trinh" width="95px">
-      <h1><a href="/">home</a></h1>
-      <h1><a href="/">about</a></h1>
-      <h1><a href="/">work</a></h1>
+      <h2><a href="#home">home</a></h2>
+      <h2><a href="#about">about</a></h2>
+      <h2><a href="#work">work</a></h2>
     </header>
 
     <section class="heropage1">
@@ -122,25 +173,27 @@
     </section>
 
     <div class="container">
-
+      <img src="PortfolioPic.jpeg" alt="Victoria Trinh" width="380px" class="portfolioPic">
+      <section class="aboutBox">
+        <h1>Welcome to my portfolio! I’m Victoria, a second-year GBDA student at the University of Waterloo looking to build my skills through hands-on experiences and real-world projects.</h1>
+      </section>
     </div>
     <section id="home" class="heropage1">
-  ...
-</section>
+      ...
+    </section>
 
-<section id="about">
-  <div class="container">
-    <h2>About Me</h2>
-    <p>...</p>
-  </div>
-</section>
+    <section id="about">
+      <div class="container">
+        <p>...</p>
+      </div>
+    </section>
 
-<section id="work">
-  <div class="container">
-    <h2>My Work</h2>
-    <p>...</p>
-  </div>
-</section>
+    <section id="work">
+      <div class="container">
+        <h2>My Work</h2>
+        <p>...</p>
+      </div>
+    </section>
 
   </body>
 </html>
