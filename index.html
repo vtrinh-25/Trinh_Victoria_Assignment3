@@ -668,7 +668,7 @@
         margin: 0 auto;
         display: flex;
         /* puts items side-by-side */
-        justify-content: center;
+        justify-content: flex-end;
         /* aligns to right side */
         align-items: center;
       }
@@ -677,6 +677,12 @@
         list-style-type: none;
         padding: 0;
       }
+      
+      .footerLogo {
+        position: relative;
+        right: 500px;
+      }
+ 
     </style>
   </head>
   <body>
@@ -938,8 +944,11 @@
       </div>
 
 
-      <footer><img src="VT_Logo.png" alt="Victoria Trinh" width="110px">
-        <ul class="no-bullets" style="justify-content: flex-end;">
+      <footer>
+        <div class="footerLogo">
+        <img src="VT_Logo.png" alt="Victoria Trinh" width="110px">
+        </div>
+        <ul class="no-bullets">
           <li>
             <a href="mailto:v2trinh@uwaterloo.ca">
               <img src="mail.png" alt="Email Icon" style="width:40px;">
