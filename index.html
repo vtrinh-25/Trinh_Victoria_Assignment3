@@ -158,7 +158,7 @@
         left: 700px;
       }
 
-     .mailImg {
+      .mailImg {
         position: relative;
         top: -245px;
         left: -355px;
@@ -312,34 +312,36 @@
         /* hover effect for whole box */
         cursor: pointer;
       }
-      
+
       .workBox img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  object-position: center;
-}
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        object-position: center;
+      }
 
       .workItem {
-  display: flex;
-  flex-direction: column;
-  align-items: center; /* centers label under box */
-}
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        /* centers label under box */
+      }
 
-.workLabel {
-  margin-top: 10px;
-  font-size: 18px;
-  font-weight: bold;
-  text-decoration: none;
-  color: #003859;
-  transition: color 0.3s ease;
-}
+      .workLabel {
+        margin-top: 10px;
+        font-size: 18px;
+        font-weight: bold;
+        text-decoration: none;
+        color: #003859;
+        transition: color 0.3s ease;
+      }
 
-.workLabel:hover {
-  color: #7EA2B8; /* hover effect */
-  cursor: pointer;
-}
-      
+      .workLabel:hover {
+        color: #7EA2B8;
+        /* hover effect */
+        cursor: pointer;
+      }
+
       .heropage2 {
         width: 1200px;
         height: 600px;
@@ -646,13 +648,15 @@
         width: 850px;
         margin: 0 auto;
       }
-      
+
       iframe {
-  display: block;       /* makes iframe behave like a block element */
-  margin: 0 auto;       /* centers it horizontally */
-         position: relative;
+        display: block;
+        /* makes iframe behave like a block element */
+        margin: 0 auto;
+        /* centers it horizontally */
+        position: relative;
         top: 130px;
-}
+      }
 
       footer {
         width: 1200px;
@@ -667,6 +671,11 @@
         justify-content: center;
         /* aligns to right side */
         align-items: center;
+      }
+
+      .no-bullets {
+        list-style-type: none;
+        padding: 0;
       }
     </style>
   </head>
@@ -689,7 +698,7 @@
 
     <div class="containerHome">
       <img src="PortfolioPic.jpeg" alt="Portfolio Image of Victoria Trinh" width="400px" class="portfolioPic">
-      
+
       <a href="mailto:v2trinh@uwaterloo.ca">
         <img src="mailHome.png" alt="Mail Logo" width="200px" class="mailImg">
       </a>
@@ -697,13 +706,13 @@
       <a href="https://www.instagram.com/glimpse_of_v/" target="_blank">
         <img src="instaHome.png" alt="Instagram Logo" width="200px" class="instaImg">
       </a>
-      
+
       <img src="petalsHome.png" alt="Blue Petal Design" width="300px" class="petalsHome">
       <section class="contactNames">
 
         <h3>: <a href="mailto:v2trinh@uwaterloo.ca" class="blue">Victoria Trinh</a><br>&nbsp: <a href="https://www.instagram.com/glimpse_of_vigsh=MTZ4dnNldzNtY2dkcg%3D%3D&utm_source=qr" class="blue" target="_blank">glimpse_of_v</a></h3>
       </section>
-      
+
       <section class="aboutBox">
         <p>Welcome to my portfolio! I’m Victoria, a second-year GBDA student at the University of Waterloo looking to build my skills through hands-on experiences and real-world projects.</p>
       </section>
@@ -716,28 +725,34 @@
       <div class="workGrid">
         <!-- Box 1 -->
         <div class="workItem">
-            <a href="#2Dwork" class="workBox">
+          <a href="#2Dwork" class="workBox">
             <img src="hakuHome.png" alt="2D Work - Haku Design" width="275">
-            </a>
-            <a href="#2Dwork" class="workLabel"><h2>2D Work</h2></a>
+          </a>
+          <a href="#2Dwork" class="workLabel">
+            <h2>2D Work</h2>
+          </a>
         </div>
 
         <!-- Box 2 -->
         <div class="workItem">
-        <a href="#3Dwork" class="workBox">
-          <img src="blendHome.png" alt="3D Work - Blender House" width="270">
-        </a>
-        <a href="#3Dwork" class="workLabel"><h2>3D Work</h2></a>
+          <a href="#3Dwork" class="workBox">
+            <img src="blendHome.png" alt="3D Work - Blender House" width="270">
+          </a>
+          <a href="#3Dwork" class="workLabel">
+            <h2>3D Work</h2>
+          </a>
         </div>
 
         <!-- Box 3 -->
         <div class="workItem">
-        <a href="#Cinematography" class="workBox">
-          <img src="ClawLand_SilentFilm.png" alt="Cinematography - Claw Arcade" width="240">
-        </a>
-          <a href="#Cinematography" class="workLabel"><h2>Cinematography</h2></a>
+          <a href="#Cinematography" class="workBox">
+            <img src="ClawLand_SilentFilm.png" alt="Cinematography - Claw Arcade" width="240">
+          </a>
+          <a href="#Cinematography" class="workLabel">
+            <h2>Cinematography</h2>
+          </a>
         </div>
-      
+
       </div>
 
       <section id="about" class="heropage2">
@@ -918,14 +933,25 @@
           <p><strong>Medium(s):</strong> Sony A7Cii, Adobe Premiere Pro</p>
           <p><strong>Description:</strong> A silent film about a claw machine arcade that evokes a sense of time, feeling, and location.</p>
         </div>
-          <iframe width="660" height="415" src="https://www.youtube.com/embed/UHbGCNgDZmc" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
-          </iframe>
+        <iframe width="660" height="415" src="https://www.youtube.com/embed/UHbGCNgDZmc" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
+        </iframe>
       </div>
 
 
       <footer><img src="VT_Logo.png" alt="Victoria Trinh" width="110px">
-      
+        <ul class="no-bullets" style="justify-content: flex-end;">
+          <li>
+            <a href="mailto:v2trinh@uwaterloo.ca">
+              <img src="mail.png" alt="Email Icon" style="width:40px;">
+            </a>
+          </li>
+          <li>
+            <a href="https://www.instagram.com/mysite_official" target="_blank">
+              <img src="insta.png" alt="Instagram Icon" style="width:40px;">
+            </a>
+          </li>
+        </ul>
       </footer>
-       </div>
+    </div>
   </body>
 </html>
