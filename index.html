@@ -282,7 +282,7 @@
         left: 190px;
       }
 
-    /*  .workGrid {
+      .workGrid {
         display: grid;
         grid-template-columns: repeat(3, 1fr);
         padding: 20px;
@@ -293,7 +293,9 @@
         top: -270px;
       }
 
-      .workGrid div {
+      .workBox {
+        width: 250px;
+        height: 250px;
         background-color: #7EA2B8;
         border: 8px solid #003859;
         font-size: 20px;
@@ -303,31 +305,7 @@
         align-items: center;
         aspect-ratio: 1 / 1;
         box-shadow: 0px 0px 15px 3px rgba(0, 0, 0, 0.8);
-      } */
-      
-      .workGrid {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  padding: 20px;
-  gap: 95px;
-  max-width: 1000px;
-  margin: 0 auto;
-  position: relative;
-  top: -270px;
-}
-
-.workBox {
-  display: flex;              /* centers content */
-  justify-content: center;
-  align-items: center;
-  padding: 20px;
-  background-color: #f5f5f5;  /* optional box background */
-  border-radius: 10px;
-  text-align: center;
-  text-decoration: none;      /* removes underline */
-  color: inherit;             /* keeps text color consistent */
-  transition: background-color 0.3s ease;
-}
+      } 
 
 .workBox:hover {
   background-color: #e0e0e0;  /* hover effect for whole box */
