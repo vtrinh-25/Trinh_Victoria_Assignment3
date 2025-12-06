@@ -78,7 +78,7 @@
         text-decoration: underline;
       }
 
-      h1 {
+      p {
         text-align: center;
         margin: 0;
         padding: 20px;
@@ -90,24 +90,27 @@
         text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
       }
 
-      h2 {
-        margin: 0;
-        padding: 10px;
-        font-family: "Quicksand", sans-serif;
-        font-weight: 400;
-        font-size: 32px;
-        font-style: normal;
-      }
-
-      h3 {
+      h1 {
         font-family: "Khiara Script", cursive;
         font-size: 100px;
         color: white;
         text-align: center;
         margin: 0;
       }
+      
+       h2 {
+        text-align: center;
+        margin: 0;
+        padding: 20px;
+        font-family: "Quicksand", sans-serif;
+        font-weight: 600;
+        font-size: 40px;
+        font-style: normal;
+        color: #7AACCB;
+        text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+      }
 
-      h4 {
+      h3 {
         text-align: center;
         margin: 0;
         padding: 20px;
@@ -118,17 +121,14 @@
         color: #7AACCB;
         text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
       }
-
-      h5 {
-        text-align: center;
+      
+       h4 {
         margin: 0;
-        padding: 20px;
+        padding: 10px;
         font-family: "Quicksand", sans-serif;
-        font-weight: 600;
-        font-size: 40px;
+        font-weight: 400;
+        font-size: 32px;
         font-style: normal;
-        color: #7AACCB;
-        text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
       }
 
       .heropage1 {
@@ -191,7 +191,7 @@
         width: 500px;
         height: 240px;
         box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3);
-        /* help make drop shadow */
+        /* AI prompt: how to make drop shadow */
         background: linear-gradient(to bottom,
             rgba(103, 96, 82, 1) 0%,
             rgba(85, 92, 89, 0.8) 40%,
@@ -338,24 +338,6 @@
         position: relative;
         top: -1458px;
         left: 367px;
-      }
-
-      /* AI prompt: can I crop an image? */
-      .squareCrop {
-        width: 300px;
-        /* crop width */
-        aspect-ratio: 1 / 1;
-        overflow: hidden;
-        /* hides the rest of the image */
-      }
-
-      .squareCrop img {
-        width: 100%;
-        height: 100%;
-        object-fit: cover;
-        /* crops image to fit box */
-        object-position: center;
-        /* shift image left */
       }
 
       .heropage2 {
@@ -693,9 +675,9 @@
 
     <header>
       <img src="VT_Logo.png" alt="Victoria Trinh" width="95px">
-      <h2><a href="#home" class="white">home</a></h2>
-      <h2><a href="#about" class="white">about</a></h2>
-      <h2><a href="#work" class="white">work</a></h2>
+      <h4><a href="#home" class="white">home</a></h4>
+      <h4><a href="#about" class="white">about</a></h4>
+      <h4><a href="#work" class="white">work</a></h4>
     </header>
 
     <section id="home" class="heropage1">
@@ -717,10 +699,10 @@
       <img src="petalsHome.png" alt="Blue Petal Design" width="300px" class="petalsHome">
       <section class="contactNames">
 
-        <h4>: <a href="mailto:v2trinh@uwaterloo.ca" class="blue">Victoria Trinh</a><br>&nbsp: <a href="https://www.instagram.com/glimpse_of_vigsh=MTZ4dnNldzNtY2dkcg%3D%3D&utm_source=qr" class="blue" target="_blank">glimpse_of_v</a></h4>
+        <h3>: <a href="mailto:v2trinh@uwaterloo.ca" class="blue">Victoria Trinh</a><br>&nbsp: <a href="https://www.instagram.com/glimpse_of_vigsh=MTZ4dnNldzNtY2dkcg%3D%3D&utm_source=qr" class="blue" target="_blank">glimpse_of_v</a></h3>
       </section>
       <section class="aboutBox">
-        <h1>Welcome to my portfolio! I’m Victoria, a second-year GBDA student at the University of Waterloo looking to build my skills through hands-on experiences and real-world projects.</h1>
+        <p>Welcome to my portfolio! I’m Victoria, a second-year GBDA student at the University of Waterloo looking to build my skills through hands-on experiences and real-world projects.</p>
       </section>
       <a href="#about" class="abtButton">about me
       </a>
@@ -733,7 +715,7 @@
         <div></div>
       </div>
      <div class="hakuHome">
-  <a href="#twoworkSection">
+  <a href="#2Dwork">
     <img src="Haku Design 2.png" alt="Graphic Design of Haku" width="275px">
   </a>
 </div>
@@ -750,13 +732,13 @@
   </a>
 </div>
       <div class="twoworkHome">
-        <h5>2D Work</h5>
+        <h2>2D Work</h2>
       </div>
       <div class="threeworkHome">
-        <h5>3D Work</h5>
+        <h2>3D Work</h2>
       </div>
       <div class="cinemaHome">
-        <h5>Cinematography</h5>
+        <h2>Cinematography</h2>
       </div>
     </div>
 
@@ -772,18 +754,18 @@
       <div class="abtPic3"><img src="abtPic3.png" alt="About Me Pic 3" width="600px"></div>
 
       <section class="bioBox">
-        <h1>Hi! I’m Victoria Trinh, a Chinese-Vietnamese Toronto-based designer and visual storyteller with a passion for clean, modern design combined with the expressive aesthetics of Asian visual culture. Currently studying Global Business and Digital Arts from the University of Waterloo, I blend creativity with strategy to craft visuals that not only look beautiful, but communicate with clarity and purpose.</h1>
+        <p>Hi! I’m Victoria Trinh, a Chinese-Vietnamese Toronto-based designer and visual storyteller with a passion for clean, modern design combined with the expressive aesthetics of Asian visual culture. Currently studying Global Business and Digital Arts from the University of Waterloo, I blend creativity with strategy to craft visuals that not only look beautiful, but communicate with clarity and purpose.</p>
       </section>
       <img src="petalsAbt1.png" alt="Three Blue Petals Design" width="300px" class="abtPetals1">
       <img src="Design_Interests.png" alt="Design Interests subtitle" width="1600px" class="designSub">
       <img src="Hobbies.png" alt="Hobbies subtitle" width="1600px" class="hobbiesSub">
       <div class="aboutGrid">
         <div>
-          <h1>My work spans graphic design, UI/UX, cinematography, and marketing, and I especially love working in the industries of music and technology. Whether I’m shaping a brand identity, designing intuitive interfaces, or framing a shot, I’m driven by detail, intention, and a playful curiosity that keeps my ideas unique.</h1>
+          <p>My work spans graphic design, UI/UX, cinematography, and marketing, and I especially love working in the industries of music and technology. Whether I’m shaping a brand identity, designing intuitive interfaces, or framing a shot, I’m driven by detail, intention, and a playful curiosity that keeps my ideas unique.</p>
         </div>
 
         <div>
-          <h1>Outside of design, you can usually find me on a volleyball court, behind a camera, or deep into K-pop, K-dramas, and C-dramas. Photography, videography, and storytelling fuel my creative energy and inspire the way I see light, colour, and emotion in my work. I’m also someone who values meaningful connections. I’m incredibly close with my family and friends, and they’re a big part of what keeps me grounded and inspired.</h1>
+          <p>Outside of design, you can usually find me on a volleyball court, behind a camera, or deep into K-pop, K-dramas, and C-dramas. Photography, videography, and storytelling fuel my creative energy and inspire the way I see light, colour, and emotion in my work. I’m also someone who values meaningful connections. I’m incredibly close with my family and friends, and they’re a big part of what keeps me grounded and inspired.</p>
         </div>
       </div>
       <div class="line1"></div>
@@ -800,21 +782,21 @@
 
     <div class="containerWork">
   <div class="box2D" id="twoworkSection">
-    <h3>2D Work</h3>
+    <h1>2D Work</h1>
   </div>
   <div class="box3D" id="threeworkSection">
-    <h3>3D Work</h3>
+    <h1>3D Work</h1>
   </div>
   <div class="boxCinema" id="cinemaSection">
-    <h3>Cinematography</h3>
+    <h1>Cinematography</h1>
   </div>
       <div class="magTextBox">
-        <h5>
+        <h2>
           <strong>“So Now What?”</strong>
-        </h5>
-        <h1><strong>Date Created:</strong> November 2024</h1>
-        <h1><strong>Medium(s):</strong> Adobe InDesign</h1>
-        <h1><strong>Description:</strong> In my first year of GBDA, one of my final projects was to create a magazine using existing patterns and designs. The written content served as my final reflection for the course.</h1>
+        </h2>
+        <p><strong>Date Created:</strong> November 2024</p>
+        <p><strong>Medium(s):</strong> Adobe InDesign</p>
+        <p><strong>Description:</strong> In my first year of GBDA, one of my final projects was to create a magazine using existing patterns and designs. The written content served as my final reflection for the course.</p>
       </div>
       <div class="magGrid">
         <div><img src="SoNowWhat-Magazine1.png" alt="So Now What Magazine page 1" width="190px"></div>
@@ -827,23 +809,23 @@
         <div><img src="SoNowWhat-Magazine8.png" alt="So Now What Magazine page 8" width="190px"></div>
       </div>
       <div class="hakuTextBox">
-        <h5>
+        <h2>
           <strong>“Haku’s Escape”</strong>
-        </h5>
-        <h1><strong>Date Created:</strong> May 2022</h1>
-        <h1><strong>Medium(s):</strong> Adobe Illustrator, Procreate</h1>
-        <h1><strong>Description:</strong> Inspired by Haku from the Studio Ghibli film “Spirited Away”, I designed this graphic and had it printed on the back of a zip-up sweater as a gift for my sister.</h1>
+        </h2>
+        <p><strong>Date Created:</strong> May 2022</p>
+        <p><strong>Medium(s):</strong> Adobe Illustrator, Procreate</p>
+        <p><strong>Description:</strong> Inspired by Haku from the Studio Ghibli film “Spirited Away”, I designed this graphic and had it printed on the back of a zip-up sweater as a gift for my sister.</p>
       </div>
       <div class="hakuBox">
         <img src="Haku Design 2.png" alt="Spirited Away Haku Graphic Design" width="700px">
       </div>
       <div class="blendTextBox">
-        <h5>
+        <h2>
           <strong>“Sibling Living”</strong>
-        </h5>
-        <h1><strong>Date Created:</strong> May-June 2022</h1>
-        <h1><strong>Medium(s):</strong> Blender (3D Software)</h1>
-        <h1><strong>Description:</strong> A bungalow style home that reflects my vision of a dream space, designed around the idea of living with my sister.</h1>
+        </h2>
+        <p><strong>Date Created:</strong> May-June 2022</p>
+        <p><strong>Medium(s):</strong> Blender (3D Software)</p>
+        <p><strong>Description:</strong> A bungalow style home that reflects my vision of a dream space, designed around the idea of living with my sister.</p>
       </div>
       <div class="blendGrid">
         <div><img src="blend_house-front 2 Small.png" alt="Blender House (front)" width="250px"></div>
@@ -869,49 +851,73 @@
       </div>
       <div class="blendGridLabels">
         <div>
-          <h1>Front</h1>
+          <p>
+            Front
+          </p>
         </div>
         <div>
-          <h1>Back</h1>
+          <p>
+            Back
+          </p>
+        </div>
+        <div> <p>
+          Top (Open Roof)
+          </p>
         </div>
         <div>
-          <h1>Top (Open Roof)</h1>
+          <p>
+            Top (Closed Roof) 
+          </p>
         </div>
         <div>
-          <h1>Top (Closed Roof)</h1>
+          <p>
+             Kitchen
+          </p>
         </div>
         <div>
-          <h1>Kitchen</h1>
+          <p>
+            Living Room 
+          </p>
+         
         </div>
         <div>
-          <h1>Living Room</h1>
+          <p>
+            Primary Bedroom
+          </p>
         </div>
         <div>
-          <h1>Primary Bedroom</h1>
+          <p>
+            Secondary Bedroom
+          </p>
         </div>
         <div>
-          <h1>Secondary Bedroom</h1>
+          <p>
+            Office
+          </p>
         </div>
         <div>
-          <h1>Office</h1>
+          <p>
+            Primary Washroom
+          </p>
         </div>
         <div>
-          <h1>Primary Washroom</h1>
+          <p>
+            Powder Room
+          </p>
         </div>
         <div>
-          <h1>Powder Room</h1>
-        </div>
-        <div>
-          <h1>Laundry Room</h1>
+          <p>
+            Laundry Room
+          </p>
         </div>
       </div>
       <div class="clawTextBox">
-        <h5>
+        <h2>
           <strong>“Claw Land” - A Silent Film</strong>
-        </h5>
-        <h1><strong>Date Created:</strong> September 2025</h1>
-        <h1><strong>Medium(s):</strong> Sony A7Cii, Adobe Premiere Pro</h1>
-        <h1><strong>Description:</strong> A silent film about a claw machine arcade that evokes a sense of time, feeling, and location.</h1>
+        </h2>
+        <p><strong>Date Created:</strong> September 2025</p>
+        <p><strong>Medium(s):</strong> Sony A7Cii, Adobe Premiere Pro</p>
+        <p><strong>Description:</strong> A silent film about a claw machine arcade that evokes a sense of time, feeling, and location.</p>
       </div>
       <div class="clawBox">
         <img src="ClawLand_SilentFilm.png
