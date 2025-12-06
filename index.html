@@ -320,41 +320,26 @@
   object-position: center;
 }
 
-      .hakuHome {
-        position: relative;
-        top: -610px;
-        left: 100px;
-      }
+      .workItem {
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* centers label under box */
+}
 
-      .blendHome {
-        position: relative;
-        top: -1030px;
-        left: 450px;
-      }
+.workLabel {
+  margin-top: 10px;
+  font-size: 18px;
+  font-weight: bold;
+  text-decoration: none;
+  color: #003859;
+  transition: color 0.3s ease;
+}
 
-      .clawHome {
-        position: relative;
-        top: -1285px;
-        left: 845px;
-      }
-
-      .twoworkHome {
-        position: relative;
-        top: -1251px;
-        left: -360px;
-      }
-
-      .threeworkHome {
-        position: relative;
-        top: -1355px;
-      }
-
-      .cinemaHome {
-        position: relative;
-        top: -1458px;
-        left: 367px;
-      }
-
+.workLabel:hover {
+  color: #7EA2B8; /* hover effect */
+  cursor: pointer;
+}
+      
       .heropage2 {
         width: 1200px;
         height: 600px;
@@ -724,65 +709,32 @@
       <div class="line"></div>
       <a href="#work" class="checkworkButton">check out some of my work!</a>
       <img src="singlePetal.png" alt="One Blue Petal Design" width="300px" class="singlePetal">
-      <!--div class="workGrid">
-        <div></div>
-        <div></div>
-        <div></div>
-      </div>
-      
-      <div class="hakuHome">
-        <a href="#2Dwork">
-          <img src="haku.png" alt="Graphic Design of Haku" width="275px">
-        </a>
-      </div>
-
-      <div class="blendHome">
-        <a href="#3Dwork">
-          <img src="homepageBlend.png" alt="Blender House" width="270px">
-        </a>
-      </div>
-
-      <div class="clawHome">
-        <a href="#Cinematography">
-          <img src="ClawLand_SilentFilm.png" alt="Claw Arcade" width="240px">
-        </a>
-      </div>
-      <div class="twoworkHome">
-        <h2>2D Work</h2>
-      </div>
-      <div class="threeworkHome">
-        <h2>3D Work</h2>
-      </div>
-      <div class="cinemaHome">
-        <h2>Cinematography</h2>
-      </div>
-    </div-->
 
       <div class="workGrid">
         <!-- Box 1 -->
-        <a href="#2Dwork" class="workBox">
-          <img src="hakuHome.png" alt="2D Work - Haku Design" width="275">
-        </a>
+        <div class="workItem">
+            <a href="#2Dwork" class="workBox">
+            <img src="hakuHome.png" alt="2D Work - Haku Design" width="275">
+            </a>
+            <a href="#2Dwork" class="workLabel"><h2>2D Work</h2></a>
+        </div>
 
         <!-- Box 2 -->
+        <div class="workItem">
         <a href="#3Dwork" class="workBox">
           <img src="blendHome.png" alt="3D Work - Blender House" width="270">
         </a>
+        <a href="#3Dwork" class="workLabel"><h2>3D Work</h2></a>
+        </div>
 
         <!-- Box 3 -->
+        <div class="workItem">
         <a href="#Cinematography" class="workBox">
           <img src="ClawLand_SilentFilm.png" alt="Cinematography - Claw Arcade" width="240">
         </a>
-      </div>
-
-      <div class="twoworkHome">
-        <h2>2D Work</h2>
-      </div>
-      <div class="threeworkHome">
-        <h2>3D Work</h2>
-      </div>
-      <div class="cinemaHome">
-        <h2>Cinematography</h2>
+          <a href="#Cinematography" class="workLabel"><h2>Cinematography</h2></a>
+        </div>
+      
       </div>
 
       <section id="about" class="heropage2">
