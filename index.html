@@ -11,8 +11,8 @@
 
     <style>
       html {
-        scroll-behavior: smooth;
-        /* AI prompt: How to make a smooth scroll */
+        scroll-behavior: smooth;    /* AI prompt: How to make a smooth scroll */        
+        scroll-padding-top: 120px;  /* AI prompt: adjust to your header height */
       }
 
       /* AI prompt: how to add DaFont font in css? */
@@ -33,6 +33,7 @@
         margin: 0;
         padding: 0px;
         background-color: #01162B;
+
         line-height: 1.6;
       }
 
@@ -58,10 +59,90 @@
         /* AI prompt: how can sticky header stay above images? */
       }
 
+
+      .link {
+        color: #FF5733;   /* custom color */
+        text-decoration: none;
+      }
+
+      .link:hover {
+        color: #7AACCB;   /* hover color */
+      }
+
+      /* Force visited links to look the same as unvisited */
+      .link:visited {
+        color: #be11e0;          /* same as normal link */
+      }
+
       header img {
         position: relative;
-        right: 580px;
+        right: 710px;
       }
+
+    nav ul {
+      list-style: none;       /* remove bullets */
+      display: flex;          /* horizontal layout */
+      gap: 40px;              /* spacing between links */
+      margin: 0;
+      padding: 0;
+      position: relative;
+      right: 560px;
+    }
+
+    nav ul li {
+      position: relative; /* needed for dropdown positioning */
+      
+    }
+
+    nav a {
+      text-decoration: none;
+      color: white;
+      font-family: "Quicksand", sans-serif;  
+      font-weight: 400;
+      font-size: 32px;
+    }
+
+
+    nav a:hover {
+      text-decoration: underline;
+    }
+
+    /* Dropdown menu hidden by default */
+nav ul li .dropdown {
+  display: none;
+  position: absolute;
+  top: 100%;   /* places it below the parent link */
+  left: 0;
+  background-color: #998E78;
+  padding: 10px 0;
+  list-style: none;
+  min-width: 200px;
+  box-shadow: 0px 4px 10px rgba(0,0,0,0.3);
+}
+
+/* Dropdown items */
+nav ul li .dropdown li {
+  padding: 8px 20px;
+}
+
+/* Smaller font size for submenu links */
+nav ul li .dropdown li a {
+  color: white;
+  text-decoration: none;
+  display: block;
+  font-size: 20px; 
+}
+
+
+nav ul li .dropdown li a:hover {
+  background-color: #80B2D2;
+  color: #01162B;
+}
+
+/* Show dropdown on hover */
+nav ul li:hover .dropdown {
+  display: block;
+}
 
 
       a.white {
@@ -342,12 +423,15 @@
         cursor: pointer;
       }
 
+      /* About me image */
       .heropage2 {
         width: 1200px;
         height: 600px;
         background-color: #01162B;
         margin: 0 auto;
         padding: 20px;
+        position: relative;
+        left: -20px; /* shifts 100px left */
       }
 
       .heropage2-content img {
@@ -363,13 +447,17 @@
         /* move right */
       }
 
+      
+
       .containerAbout {
         width: 1200px;
         height: 2150px;
         margin: 0 auto;
-        /* centers the box */
+        
         background: #22516D;
         padding: 20px;
+        position: relative;
+        left: -20px; /* shifts 100px left */
       }
 
       .abtPic2 {
@@ -400,11 +488,7 @@
         padding: 10px;
       }
 
-      .abtPetals1 {
-        position: relative;
-        top: -1965px;
-        left: 920px;
-      }
+
 
       .aboutGrid {
         display: grid;
@@ -417,6 +501,12 @@
         margin: 0 auto;
         position: relative;
         top: -2290px;
+      }
+
+      .abtPetals1 {
+        position: relative;
+        top: -1965px;
+        left: 920px;
       }
 
       .designSub {
@@ -457,14 +547,18 @@
         left: -10px;
       }
 
+      /* Work Section */
       .heropage3 {
         width: 1200px;
         height: 600px;
         background-color: #01162B;
         margin: 0 auto;
         padding: 20px;
+        position: relative;
+        left: -20px; /* shifts 100px left */
       }
 
+      /* Work Image */
       .heropage3-content img {
         display: flex;
         justify-content: center;
@@ -485,6 +579,8 @@
         /* centers the box */
         background: #22516D;
         padding: 20px;
+        position: relative;
+        left: -20px;
       }
 
       .box2D {
@@ -496,6 +592,7 @@
         background-color: #9A8E78;
         margin: 0 auto;
         padding: 20px;
+        left: -20px;
       }
 
       .magGrid {
@@ -559,6 +656,7 @@
         background-color: #9A8E78;
         margin: 0 auto;
         padding: 20px;
+        left: -20px;        
       }
 
       .blendTextBox {
@@ -640,6 +738,7 @@
         background-color: #9A8E78;
         margin: 0 auto;
         padding: 20px;
+        left: -20px;
       }
 
       .clawTextBox {
@@ -671,6 +770,8 @@
         justify-content: flex-end;
         /* aligns to right side */
         align-items: center;
+        position: relative;
+        left: -20px;
       }
 
       .no-bullets {
@@ -688,12 +789,36 @@
   <body>
 
 
-    <header>
+    <!-- <header>
       <img src="VT_Logo.png" alt="Victoria Trinh" width="95px">
       <h4><a href="#home" class="white">home</a></h4>
       <h4><a href="#about" class="white">about</a></h4>
       <h4><a href="#work" class="white">work</a></h4>
-    </header>
+    </header> -->
+
+    <header>
+  <img src="VT_Logo.png" alt="Victoria Trinh" width="95px">
+  <nav>
+    <ul>
+      <li><a href="#home" class="white">Home</a></li>
+      <li><a href="#about" class="white">About</a></li>
+      <!-- Drop down menu for Work item -->
+        <li> <a href="#work" class="white">Work</a>
+        <!-- Dropdown submenu -->
+        <ul class="dropdown">
+          <li><a href="#2Dwork" class="white">2D Work</a></li>
+          <li><a href="#3Dwork" class="white">3D Work</a></li>
+          <li><a href="#Cinematography" class="white">Cinematography</a></li>
+        </ul>
+      </li>
+    </ul>
+  </nav>
+</header>
+
+ 
+
+
+
 
     <section id="home" class="heropage1">
       <div class="heropage1-content">
@@ -833,7 +958,7 @@
           </h2>
           <p><strong>Date Created:</strong> May 2022</p>
           <p><strong>Medium(s):</strong> Adobe Illustrator, Procreate</p>
-          <p><strong>Description:</strong> Inspired by Haku from the Studio Ghibli film “Spirited Away”, I designed this graphic and had it printed on the back of a zip-up sweater as a gift for my sister.</p>
+          <p><strong>Description:</strong> Inspired by Haku from the Studio Ghibli film <a href="https://www.imdb.com/title/tt0245429/" class="link" target="_blank">"Spirited Away"</a>, I designed this graphic and had it printed on the back of a zip-up sweater as a gift for my sister.</p>
         </div>
         <div class="hakuBox">
           <img src="haku.png" alt="Spirited Away Haku Graphic Design" width="700px">
@@ -937,7 +1062,7 @@
           </h2>
           <p><strong>Date Created:</strong> September 2025</p>
           <p><strong>Medium(s):</strong> Sony A7Cii, Adobe Premiere Pro</p>
-          <p><strong>Description:</strong> A silent film about a claw machine arcade that evokes a sense of time, feeling, and location.</p>
+          <p><strong>Description:</strong> A silent film about a <a href="https://www.clawlandofficial.com/" class="link" target="_blank">claw machine arcade</a> that evokes a sense of time, feeling, and location.</p>
         </div>
         <iframe width="660" height="415" src="https://www.youtube.com/embed/UHbGCNgDZmc" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
         </iframe>
