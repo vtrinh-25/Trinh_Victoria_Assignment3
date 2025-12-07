@@ -79,71 +79,6 @@
         right: 710px;
       }
 
-    nav ul {
-      list-style: none;       /* remove bullets */
-      display: flex;          /* horizontal layout */
-      gap: 40px;              /* spacing between links */
-      margin: 0;
-      padding: 0;
-      position: relative;
-      right: 560px;
-    }
-
-    nav ul li {
-      position: relative; /* needed for dropdown positioning */
-      
-    }
-
-    nav a {
-      text-decoration: none;
-      color: white;
-      font-family: "Quicksand", sans-serif;  
-      font-weight: 400;
-      font-size: 32px;
-    }
-
-
-    nav a:hover {
-      text-decoration: underline;
-    }
-
-    /* Dropdown menu hidden by default */
-nav ul li .dropdown {
-  display: none;
-  position: absolute;
-  top: 100%;   /* places it below the parent link */
-  left: 0;
-  background-color: #998E78;
-  padding: 10px 0;
-  list-style: none;
-  min-width: 200px;
-  box-shadow: 0px 4px 10px rgba(0,0,0,0.3);
-}
-
-/* Dropdown items */
-nav ul li .dropdown li {
-  padding: 8px 20px;
-}
-
-/* Smaller font size for submenu links */
-nav ul li .dropdown li a {
-  color: white;
-  text-decoration: none;
-  display: block;
-  font-size: 20px; 
-}
-
-
-nav ul li .dropdown li a:hover {
-  background-color: #80B2D2;
-  color: #01162B;
-}
-
-/* Show dropdown on hover */
-nav ul li:hover .dropdown {
-  display: block;
-}
-
 
       a.white {
         text-decoration: none;
@@ -158,6 +93,72 @@ nav ul li:hover .dropdown {
       a:hover {
         text-decoration: underline;
       }
+
+      nav ul {
+            list-style: none;       /* remove bullets */
+            display: flex;          /* horizontal layout */
+            gap: 40px;              /* spacing between links */
+            margin: 0;
+            padding: 0;
+            position: relative;
+            right: 560px;
+          }
+
+          nav ul li {
+            position: relative; /* needed for dropdown positioning */
+            
+          }
+
+          nav a {
+            text-decoration: none;
+            color: white;
+            font-family: "Quicksand", sans-serif;  
+            font-weight: 400;
+            font-size: 32px;
+          }
+
+
+          nav a:hover {
+            text-decoration: underline;
+          }
+
+          /* Dropdown menu hidden by default */
+      nav ul li .dropdown {
+        display: none;
+        position: absolute;
+        top: 100%;   /* places it below the parent link */
+        left: 0;
+        background-color: #998E78;
+        padding: 10px 0;
+        list-style: none;
+        min-width: 200px;
+        box-shadow: 0px 4px 10px rgba(0,0,0,0.3);
+      }
+
+      /* Dropdown items */
+      nav ul li .dropdown li {
+        padding: 8px 20px;
+      }
+
+      /* Smaller font size for submenu links */
+      nav ul li .dropdown li a {
+        color: white;
+        text-decoration: none;
+        display: block;
+        font-size: 20px;   /* 👈 smaller than your main nav (20px) */
+      }
+
+
+      nav ul li .dropdown li a:hover {
+        background-color: #80B2D2;
+        color: #01162B;
+      }
+
+      /* Show dropdown on hover */
+      nav ul li:hover .dropdown {
+        display: block;
+      }
+
 
       p {
         text-align: center;
@@ -363,7 +364,7 @@ nav ul li:hover .dropdown {
         left: 190px;
       }
 
-      .workGrid {
+      /* .workGrid {
         display: grid;
         grid-template-columns: repeat(3, 1fr);
         padding: 20px;
@@ -372,6 +373,18 @@ nav ul li:hover .dropdown {
         margin: 0 auto;
         position: relative;
         top: -270px;
+      } */
+
+      .workGrid {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr); /* 3 equal columns */
+        gap: 40px;              /* smaller, consistent spacing */
+        width: 100%;            /* let it fill container */
+        max-width: 1100px;      /* optional limit */
+        margin: 0 auto;         /* centers the grid */
+        position: relative;
+        top: -270px;                 /* remove manual offset */
+        justify-items: center;  /* centers items inside each grid cell */
       }
 
       .workBox {
@@ -401,11 +414,16 @@ nav ul li:hover .dropdown {
         object-position: center;
       }
 
+      /* .workItem {
+        display: flex;
+        flex-direction: column;
+        align-items: center; 
+      } */
+
       .workItem {
         display: flex;
         flex-direction: column;
-        align-items: center;
-        /* centers label under box */
+        align-items: center; /* centers box + label */
       }
 
       .workLabel {
@@ -503,7 +521,7 @@ nav ul li:hover .dropdown {
         top: -2290px;
       }
 
-      .abtPetals1 {
+            .abtPetals1 {
         position: relative;
         top: -1965px;
         left: 920px;
@@ -583,8 +601,7 @@ nav ul li:hover .dropdown {
         left: -20px;
       }
 
-      .box2D {
-        position: relative;
+      .box2D {        
         top: 100px;
         width: 1200px;
         height: 110px;
@@ -592,6 +609,7 @@ nav ul li:hover .dropdown {
         background-color: #9A8E78;
         margin: 0 auto;
         padding: 20px;
+        position: relative;
         left: -20px;
       }
 
@@ -647,8 +665,7 @@ nav ul li:hover .dropdown {
         margin: 0 auto;
       }
 
-      .box3D {
-        position: relative;
+      .box3D {        
         top: 2650px;
         width: 1200px;
         height: 110px;
@@ -656,6 +673,7 @@ nav ul li:hover .dropdown {
         background-color: #9A8E78;
         margin: 0 auto;
         padding: 20px;
+        position: relative;
         left: -20px;        
       }
 
@@ -729,8 +747,7 @@ nav ul li:hover .dropdown {
         margin: 0 auto;
       }
 
-      .boxCinema {
-        position: relative;
+      .boxCinema {        
         top: 4000px;
         width: 1200px;
         height: 110px;
@@ -738,6 +755,7 @@ nav ul li:hover .dropdown {
         background-color: #9A8E78;
         margin: 0 auto;
         padding: 20px;
+        position: relative;
         left: -20px;
       }
 
