@@ -11,8 +11,10 @@
 
     <style>
       html {
-        scroll-behavior: smooth;    /* AI prompt: How to make a smooth scroll */        
-        scroll-padding-top: 120px;  /* AI prompt: adjust to your header height */
+        scroll-behavior: smooth;
+        /* AI prompt: How to make a smooth scroll */
+        scroll-padding-top: 120px;
+        /* AI prompt: adjust to your header height */
       }
 
       /* AI prompt: how to add DaFont font in css? */
@@ -61,17 +63,20 @@
 
 
       .link {
-        color: #FF5733;   /* custom color */
+        color: #01162B;
+        /* custom color */
         text-decoration: none;
       }
 
       .link:hover {
-        color: #7AACCB;   /* hover color */
+        color: #7AACCB;
+        /* hover color */
       }
 
       /* Force visited links to look the same as unvisited */
       .link:visited {
-        color: #be11e0;          /* same as normal link */
+        color: #003859;
+        /* same as normal link */
       }
 
       header img {
@@ -90,49 +95,53 @@
         color: #7AACCB;
       }
 
+      nav ul {
+        list-style: none;
+        /* remove bullets */
+        display: flex;
+        /* horizontal layout */
+        gap: 60px;
+        /* spacing between links */
+        margin: 0;
+        padding: 0;
+        position: relative;
+        right: 340px;
+      }
+
+      nav ul li {
+        position: relative;
+        /* needed for dropdown positioning */
+
+      }
+
+      nav a {
+        text-decoration: none;
+        color: white;
+        font-family: "Quicksand", sans-serif;
+        font-weight: 400;
+        font-size: 32px;
+      }
+
       a:hover {
         text-decoration: underline;
       }
 
-      nav ul {
-            list-style: none;       /* remove bullets */
-            display: flex;          /* horizontal layout */
-            gap: 40px;              /* spacing between links */
-            margin: 0;
-            padding: 0;
-            position: relative;
-            right: 560px;
-          }
+      nav a:hover {
+        text-decoration: underline;
+      }
 
-          nav ul li {
-            position: relative; /* needed for dropdown positioning */
-            
-          }
-
-          nav a {
-            text-decoration: none;
-            color: white;
-            font-family: "Quicksand", sans-serif;  
-            font-weight: 400;
-            font-size: 32px;
-          }
-
-
-          nav a:hover {
-            text-decoration: underline;
-          }
-
-          /* Dropdown menu hidden by default */
+      /* Dropdown menu hidden by default */
       nav ul li .dropdown {
         display: none;
         position: absolute;
-        top: 100%;   /* places it below the parent link */
+        top: 100%;
+        /* places it below the parent link */
         left: 0;
         background-color: #998E78;
         padding: 10px 0;
         list-style: none;
         min-width: 200px;
-        box-shadow: 0px 4px 10px rgba(0,0,0,0.3);
+        box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3);
       }
 
       /* Dropdown items */
@@ -145,7 +154,8 @@
         color: white;
         text-decoration: none;
         display: block;
-        font-size: 20px;   /* 👈 smaller than your main nav (20px) */
+        font-size: 20px;
+        /* 👈 smaller than your main nav (20px) */
       }
 
 
@@ -364,27 +374,17 @@
         left: 190px;
       }
 
-      /* .workGrid {
+      .workGrid {
         display: grid;
         grid-template-columns: repeat(3, 1fr);
-        padding: 20px;
-        gap: 95px;
-        max-width: 1000px;
+        gap: 40px;
+        width: 100%;
+        max-width: 1100px;
         margin: 0 auto;
         position: relative;
         top: -270px;
-      } */
-
-      .workGrid {
-        display: grid;
-        grid-template-columns: repeat(3, 1fr); /* 3 equal columns */
-        gap: 40px;              /* smaller, consistent spacing */
-        width: 100%;            /* let it fill container */
-        max-width: 1100px;      /* optional limit */
-        margin: 0 auto;         /* centers the grid */
-        position: relative;
-        top: -270px;                 /* remove manual offset */
-        justify-items: center;  /* centers items inside each grid cell */
+        justify-items: center;
+        /* centers items inside each grid cell */
       }
 
       .workBox {
@@ -414,16 +414,11 @@
         object-position: center;
       }
 
-      /* .workItem {
-        display: flex;
-        flex-direction: column;
-        align-items: center; 
-      } */
-
       .workItem {
         display: flex;
         flex-direction: column;
-        align-items: center; /* centers box + label */
+        align-items: center;
+        /* centers box + label */
       }
 
       .workLabel {
@@ -449,7 +444,8 @@
         margin: 0 auto;
         padding: 20px;
         position: relative;
-        left: -20px; /* shifts 100px left */
+        left: -20px;
+        /* shifts 100px left */
       }
 
       .heropage2-content img {
@@ -465,17 +461,18 @@
         /* move right */
       }
 
-      
+
 
       .containerAbout {
         width: 1200px;
         height: 2150px;
         margin: 0 auto;
-        
+
         background: #22516D;
         padding: 20px;
         position: relative;
-        left: -20px; /* shifts 100px left */
+        left: -20px;
+        /* shifts 100px left */
       }
 
       .abtPic2 {
@@ -507,7 +504,6 @@
       }
 
 
-
       .aboutGrid {
         display: grid;
         grid-template-rows: auto auto;
@@ -521,7 +517,7 @@
         top: -2290px;
       }
 
-            .abtPetals1 {
+      .abtPetals1 {
         position: relative;
         top: -1965px;
         left: 920px;
@@ -561,8 +557,8 @@
 
       .abtPetals2 {
         position: relative;
-        top: -2380px;
-        left: -10px;
+        top: -2430px;
+        left: -20px;
       }
 
       /* Work Section */
@@ -573,7 +569,8 @@
         margin: 0 auto;
         padding: 20px;
         position: relative;
-        left: -20px; /* shifts 100px left */
+        left: -20px;
+        /* shifts 100px left */
       }
 
       /* Work Image */
@@ -587,21 +584,20 @@
         margin-top: 50px;
         position: relative;
         right: 100px;
-        /* move right */
       }
 
       .containerWork {
         width: 1200px;
         height: 5600px;
         margin: 0 auto;
-        /* centers the box */
         background: #22516D;
         padding: 20px;
         position: relative;
         left: -20px;
       }
 
-      .box2D {        
+      /*       2D Work subtitle */
+      .box2D {
         top: 100px;
         width: 1200px;
         height: 110px;
@@ -665,7 +661,7 @@
         margin: 0 auto;
       }
 
-      .box3D {        
+      .box3D {
         top: 2650px;
         width: 1200px;
         height: 110px;
@@ -674,7 +670,7 @@
         margin: 0 auto;
         padding: 20px;
         position: relative;
-        left: -20px;        
+        left: -20px;
       }
 
       .blendTextBox {
@@ -747,7 +743,7 @@
         margin: 0 auto;
       }
 
-      .boxCinema {        
+      .boxCinema {
         top: 4000px;
         width: 1200px;
         height: 110px;
@@ -796,12 +792,11 @@
         list-style-type: none;
         padding: 0;
       }
-      
+
       .footerLogo {
         position: relative;
         right: 500px;
       }
- 
     </style>
   </head>
   <body>
@@ -815,28 +810,23 @@
     </header> -->
 
     <header>
-  <img src="VT_Logo.png" alt="Victoria Trinh" width="95px">
-  <nav>
-    <ul>
-      <li><a href="#home" class="white">Home</a></li>
-      <li><a href="#about" class="white">About</a></li>
-      <!-- Drop down menu for Work item -->
-        <li> <a href="#work" class="white">Work</a>
-        <!-- Dropdown submenu -->
-        <ul class="dropdown">
-          <li><a href="#2Dwork" class="white">2D Work</a></li>
-          <li><a href="#3Dwork" class="white">3D Work</a></li>
-          <li><a href="#Cinematography" class="white">Cinematography</a></li>
+      <img src="VT_Logo.png" alt="Victoria Trinh" width="95px">
+      <nav>
+        <ul>
+          <li><a href="#home" class="white">Home</a></li>
+          <li><a href="#about" class="white">About</a></li>
+          <!-- Drop down menu for Work item -->
+          <li> <a href="#work" class="white">Work</a>
+            <!-- Dropdown submenu -->
+            <ul class="dropdown">
+              <li><a href="#2Dwork" class="white">2D Work</a></li>
+              <li><a href="#3Dwork" class="white">3D Work</a></li>
+              <li><a href="#Cinematography" class="white">Cinematography</a></li>
+            </ul>
+          </li>
         </ul>
-      </li>
-    </ul>
-  </nav>
-</header>
-
- 
-
-
-
+      </nav>
+    </header>
 
     <section id="home" class="heropage1">
       <div class="heropage1-content">
@@ -872,6 +862,7 @@
       <img src="singlePetal.png" alt="One Blue Petal Design" width="300px" class="singlePetal">
 
       <div class="workGrid">
+
         <!-- Box 1 -->
         <div class="workItem">
           <a href="#2Dwork" class="workBox">
@@ -1089,7 +1080,7 @@
 
       <footer>
         <div class="footerLogo">
-        <img src="VT_Logo.png" alt="Victoria Trinh" width="110px">
+          <img src="VT_Logo.png" alt="Victoria Trinh" width="110px">
         </div>
         <ul class="no-bullets">
           <li>
